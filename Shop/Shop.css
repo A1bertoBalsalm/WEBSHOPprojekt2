@@ -1,0 +1,253 @@
+@import url("../reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Michroma&display=swap');
+
+/*
+font-family: 'Alata', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Michroma', sans-serif;
+*/
+
+a{
+    text-decoration: none; 
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    
+}
+
+
+
+#Fixed{
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    
+}
+
+
+#Topbar{
+    background-color: rgb(51, 32, 90);
+    
+    width:fit-content;
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    width: 100%;
+    
+    
+
+}
+
+#Topbar-flex{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    
+    
+    
+
+
+}
+
+.Topbar-text{
+    font-family: 'Michroma', sans-serif;
+    color: rgb(243, 253, 255);
+    font-size: 1.5fr;
+    padding: 1%;
+    
+}
+
+.Topbar-shoppingcart{
+   width: 40px;
+   height: 40px;
+
+ 
+    
+
+}
+
+#Topmenu{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-image: url("./Img/99c5277188dd55fa6142ea98e4a0941b.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+
+
+
+
+#Topmenu-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 130px;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+
+}
+
+.Topmenu-element{
+    width: 350px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+    
+}
+
+
+.Topmenu-bild{
+    width: 350px;
+    height: 240px;
+     
+    
+   
+
+}
+#bild1{
+    background-image: url("./Img/9c43060e503da2529738563ddcfb9225.png");
+
+}
+#bild2{
+    background-image: url("./Img/0eb968d61efbacfb8b3d262ddf7bde43.jpg");
+
+
+}
+    
+    
+.Topmenu-text{
+    font-family: 'Alata', sans-serif;
+    color: white;
+    font-size: 4em;
+    position:relative;
+    padding-top: 16%;
+    padding-left: 1%;
+  
+  
+    
+}
+#Topmenu-text2{
+    padding-top: 42%;
+}
+
+
+#Rubrik{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Alata', sans-serif;
+    font-size: 4em;
+  
+
+  
+    
+
+
+}
+
+#Vinyl-flex{
+    display: flex;
+    flex-wrap: wrap;
+   
+
+}
+
+
+.Item{
+    background-color: rgb(51, 32, 90);
+    max-width: 274px;
+    max-height: 500px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    margin: 0 10% 0 ;
+
+
+
+}
+.Item:hover{ 
+ 
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 0.2s;
+
+}
+
+
+
+.Item-button{
+    background-color: rgb(243, 253, 255);
+    border-radius: 60px;
+    color:rgba(168, 65, 182);
+    padding: 10px;
+    width: 93%;
+    justify-content: center;
+    margin: 10px;
+    display: none;
+    
+
+}
+
+
+
+
+
+ 
+
+    
+
+
+
+.Item-artist{
+    font-style: italic;
+    padding: 7px;
+    padding-top: 15px;
+
+
+}
+.Item-product{
+    font-size: 18px;
+    padding: 7px;
+    overflow-wrap:break-word;
+
+   
+
+}
+.Item-price{
+    padding: 7px;
+    padding-top: 12px;
+    font-size: 20px;
+    font-weight:500;
+}
+
+
+@media (max-width: 500px)  {
+    #Topbar-flex{
+        justify-content: space-around;
+    }
+    .Topmenu-element{
+        width:320px;
+    }
+    
+}
+
+@media (max-width: 729px) {
+    #Topmenu{
+        height: 700px;
+    }
+
+    
+}
+
+#test{
+    width: 100vw;
+    height: 200vh;
+    color: antiquewhite;
+}
+

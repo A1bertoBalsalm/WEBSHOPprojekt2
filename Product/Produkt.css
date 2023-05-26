@@ -139,13 +139,13 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1066px) {
     #Produkt-Grid{
         display: grid;
         grid-template-columns: 413px 413px;
         grid-template-rows: unset;
         gap: 83px 10px;
-        justify-content: unset;
+
 
     }
     .Bilder-gallery{
@@ -157,9 +157,16 @@
     .Button{
         margin-top: unset;
     }
-    .
+
 
     
+}
+@media (max-width: 836px) {
+    #Produkt-Grid{
+        justify-content: unset;
+    }
+
+
 }
 
 @media (max-width: 500px) {

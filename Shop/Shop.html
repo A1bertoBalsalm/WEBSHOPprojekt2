@@ -21,7 +21,7 @@
                     <a class="Topbar-text" href="">About</a>
                     
 
-                    <img class="Topbar-shoppingcart" src="../GlobalImg/Shoppingcart.png" alt="" onclick="">
+                    <img class="Topbar-shoppingcart" src="../GlobalImg/Shoppingcart.png" alt="" onclick="openMenu()">
 
                  
 
@@ -29,12 +29,6 @@
             </div>
         </div>
 
-        <div id="ShoppingCart">
-
-
-
-
-        </div>
         <div id="Topmenu">
         
             <div id="Topmenu-flex">
@@ -53,27 +47,54 @@
             Vinyl
         </div>
         <div id="Vinyl-flex">
-            <div class="Item" onmouseover="ItemExpand()" onmouseout="ItemExpand()" style="color:rgb(243,253,255); ">
+            <div  class="Item" onmouseover="ItemExpand(0)" onmouseout="ItemExpand(0)" style="color:rgb(243,253,255); ">
                 <a href="../Product/Produkt.html">
                 <img class="Item-picture" src="../GlobalImg/Products/godspeedyoublack_1000x1000.webp" alt="">
                 </a>
                 <p class="Item-artist">Godspeed You! Black Emperor</p>
                 <p class="Item-product">Lift Your Skinny Fists Like Antennas To Heaven Vinyl 2LP</p>
                 <p class="Item-price">246 kr</p>
-                <button class="Item-button" onclick="addshoppingcart(1)" >
+                <button style="display: none" id="but0" class="Item-button" onclick="ShoppingCartAdd(1)" >
                     Add to cart
                 </button>
-
-                
+            </div>
+            <div class="Item" onmouseover="ItemExpand(1)" onmouseout="ItemExpand(1)" style="color:rgb(243,253,255); ">
+                <a href="../Product/Produkt.html">
+                    <img class="Item-picture" src="../GlobalImg/Products/jorgeben-forca-coloredvinyl-1_1000x1000.webp" alt="">
+                </a>
+                <p class="Item-artist">Jorge Ben</p>
+                <p class="Item-product">Forca Bruta (Colored Vinyl) Vinyl LP</p>
+                <p class="Item-price">400 kr</p>
+                <button style="display: none" id="but1"  class="Item-button" onclick="ShoppingCartAdd(0)" >
+                    Add to cart
+                </button>
+            </div>
+            <div class="Item" onmouseover="ItemExpand(2)" onmouseout="ItemExpand(2)" style="color:rgb(243,253,255); ">
+                <a href="../Product/Produkt.html">
+                    <img class="Item-picture" src="../GlobalImg/Products/aphextwin-selectedamby_1000x1000.webp" alt="">
+                </a>
+                <p class="Item-artist">Aphex Twin</p>
+                <p class="Item-product">Selected Ambient Works 85-92 Vinyl 2LP</p>
+                <p class="Item-price">500 kr</p>
+                <button style="display: none" id="but2"  class="Item-button" onclick="ShoppingCartAdd(2)" >
+                    Add to cart
+                </button>
             </div>
         </div>
 
 
 
-     
-        
         <div id="test"></div>
-    
+
+        <div id="ShoppingCart">
+            <div id="ShoppingCart-text"><p>Shopping Cart</p><h1 class="CloseShoppingCart" onclick="closeMenu()" >X</h1></div>
+            <div id="ShoppingCart-info"><p>Antalet Producter</p><p id="Total-Items">0</p><p id="Price">0</p><p>kr</p></div>
+
+            <ul id="cart-items">
+
+            </ul>
+        </div>
+
 
 
 

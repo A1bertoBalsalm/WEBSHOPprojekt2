@@ -57,7 +57,7 @@ function ShoppingCartAdd(id)
     TotalPris()
 }
 
-
+// Tar bort produkter från kundvagnen
 function ShoppingCartRemove(i) {
     console.log(i)
 
@@ -103,11 +103,12 @@ function ShoppingCartUpadate() {
     // Loop för varje produkt vald som tar från items array och lägger till infot från varje object
     for (let i = 0; i < shoppingCart.items.length; i++) {
 
-
+        // li elementet
         var item = shoppingCart.items[i];
         var listItem = document.createElement('li');
         listItem.className = 'cart-item';
 
+        // Ta bort knapp
         var removeButton = document.createElement('removeButton');
         removeButton.textContent = 'X';
         removeButton.addEventListener("click", () => {
@@ -117,14 +118,14 @@ function ShoppingCartUpadate() {
         removeButton.className = "cart-remove"
         listItem.appendChild(removeButton);
 
+        // bilden
         var image = document.createElement('img');
         image.src = item.img;
         image.alt = "";
-        // barn till li
         listItem.appendChild(image);
         image.className = 'cart-image'
 
-
+        // produktens info
         var itemDetails = document.createElement('span');
         itemDetails.textContent = item.product + '  ' + item.price+'kr';
         listItem.appendChild(itemDetails);
@@ -136,11 +137,12 @@ function ShoppingCartUpadate() {
     }
 }
 
+// Öppnar sid meny
 function openMenu() {
     var sideMenu = document.getElementById('ShoppingCart');
     sideMenu.classList.add('open');
 }
-
+// Stänger sid meny
 function closeMenu() {
     var sideMenu = document.getElementById('ShoppingCart');
     sideMenu.classList.remove('open');

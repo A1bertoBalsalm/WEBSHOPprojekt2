@@ -150,18 +150,13 @@ function ItemExpand(id) {
     else {
         var x = document.getElementById('but1');
     }
-    if (!navigator.maxTouchPoints > 0){
-        if (x.style.display === 'block') {
-            x.style.display = 'none';
-        } else {
-            x.style.display = 'block';
-        }
 
-    }
-    else {
-        Touchscreenfix.style.maxHeight = "500px";
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
         x.style.display = 'block';
     }
+
 
 }
 

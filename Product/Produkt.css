@@ -119,6 +119,10 @@
     grid-area: 2 / 1 / 2 / 1;
 }
 
+#Fakta > label{
+    padding-top: 10px;
+}
+
 .Rubrik2{
     color: rgb(227, 174, 180);
 }

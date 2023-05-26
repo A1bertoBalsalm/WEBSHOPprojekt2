@@ -1,0 +1,143 @@
+a{
+    text-decoration: none;
+}
+
+#Fixed{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+
+#Topbar{
+    background-color: rgb(51, 32, 90);
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+
+
+}
+
+#Topbar-flex{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+
+
+
+
+
+}
+
+.Topbar-text{
+    font-family: 'Michroma', sans-serif;
+    color: rgb(243, 253, 255);
+    font-size: 1.5fr;
+    padding: 1%;
+
+}
+
+.Topbar-shoppingcart{
+    width: 40px;
+    height: 40px;
+
+
+
+
+}@media (max-width: 500px)  {
+    #Topbar-flex{
+        justify-content: space-around;
+    }
+
+}
+
+#ShoppingCart{
+    position: fixed;
+    background-color: rgb(51, 32, 90);
+    left: -400px;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    padding: 20px;
+    transition: 1s;
+    overflow-y: auto;
+
+
+}
+
+#ShoppingCart.open {
+    left: 0;
+}
+
+#ShoppingCart-text{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #E3AEB4;
+    font-style: italic;
+    font-size: 35px;
+}
+#ShoppingCart-info{
+    display: flex;
+    padding-left: 30px;
+}
+
+#Total-Items{
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.cart-item, .CloseShoppingCart, #ShoppingCart-info{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+
+}
+
+.cart-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.cart-item{
+    font-style: italic;
+    font-size: 1em;
+    list-style-type: none;
+    padding-bottom: 10px;
+
+}
+
+
+
+.cart-remove, .CloseShoppingCart{
+    color: #E3AEB4 ;
+    font-style: normal;
+    font-size: 20px;
+
+
+
+
+}
+
+.CloseShoppingCart{
+    text-align: right;
+    font-size: xx-large;
+
+}
+
+.cart-remove:hover, .CloseShoppingCart:hover{
+    color: white;
+
+}
+
+@media (max-width: 400px) {
+    #ShoppingCart{
+        max-width: 100%;
+    }
+
+}

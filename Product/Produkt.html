@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Produkt.css">
+    <link rel="stylesheet" href="../Shoppingcart.css">
+    <script src="../Shoppingcart.js" defer></script>
     <script src="Produkt.js" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <div id="Fixed">
+        <div id="Topbar">
+            <div id="Topbar-flex">
+                <a class="Topbar-icon" href="">
+                    <img src="" alt="">
+                </a>
+
+                <a class="Topbar-text" href="../Shop/Shop.html">Shop</a>
+                <a class="Topbar-text" href="">About</a>
+
+
+                <img class="Topbar-shoppingcart" src="../GlobalImg/Shoppingcart.png" alt="" onclick="openMenu()">
+
+
+
+            </div>
+        </div>
+    </div>
     <div id="Produkt-Grid">
         <div id="Bilder">
             <div><img id="Bilder-mainpicture" src="../GlobalImg/Products/godspeedyoublack_1000x1000.webp" alt=""></div>
@@ -38,7 +58,7 @@
             <div>
 
             </div>
-            <button class="Button">
+            <button class="Button" onclick="ShoppingCartAdd(1)">
                 Add to cart
             </button>
         </div>
@@ -66,12 +86,13 @@
     </div>
 
     <div id="ShoppingCart">
-        <h1 class="CloseShoppingCart">X</h1>
+        <div id="ShoppingCart-text"><p>Shopping Cart</p><h1 class="CloseShoppingCart" onclick="closeMenu()" >X</h1></div>
+        <div id="ShoppingCart-info"><p>Antalet Producter</p><p id="Total-Items">0</p><p id="Price">0</p><p>kr</p></div>
+
         <ul id="cart-items">
 
         </ul>
     </div>
-
 
 </body>
 </html>
